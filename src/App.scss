@@ -1,0 +1,35 @@
+@import '~antd/dist/antd.css';
+//@import './theme1';
+@import './theme2';
+uncomment this and comment above to switch the color pallete .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.ant {
+  &-layout {
+    &-sider-trigger,
+    &-sider {
+      background: $color1;
+    }
+  }
+
+  &-menu {
+    &.ant-menu-dark {
+      background: $color1;
+
+      &.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+        background: $color3;
+      }
+
+      &.ant-menu-inline .ant-menu-sub {
+        background: $color2;
+      }
+    }
+  }
+}
